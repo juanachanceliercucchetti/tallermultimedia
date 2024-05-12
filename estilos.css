@@ -34,7 +34,7 @@ list-style: none;
             color: #E4B717;
         }
 .landing {
-    background-color: rgb(43, 7, 7);
+    background-color: black;
     color:#FBF0F0;
     height: fit-content;
     display: flex;
@@ -44,6 +44,20 @@ list-style: none;
 border-image-width: 30%;
 max-height: 1100px;
 align-content: end;
+}
+.recompensa{
+    padding-top: 3%;
+    padding-left: 10%;
+}
+.recompensa .cta{
+    text-align: center;
+    font-weight: 400;
+    color: #FBF0F0;
+    padding: 9px 10px;
+    background: #9B3232;
+    border: none;
+   
+
 }
 h1{
     font-size: 100px;
@@ -68,7 +82,31 @@ h4{
     display: inline-block;
 
 }
+.estilos{
+    background-color: #625b5b56 ;
+}
+.rectangulos img{
+    height:auto;
+    width: 500px ;
+}
 footer{
+    height: 400px;
+    width: auto;
     background-color: #2C2121;
     color: #FBF0F0;
+}
+.menu li{
+    list-style: none;
+    display: inline-block;
+    padding-inline: 20px;
+}
+.letras{
+    padding-top: 20px;
+    text-align: left;
+    font-size: 28px;
+}
+.letrastam{
+    
+    text-align: center;
+    font-size: 22px;
 }
