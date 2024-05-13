@@ -1,71 +1,98 @@
-<html> 
+<!DOCTYPE html>
+<html lang="es">
+
 <head>
-    <title>Landing Page</title>
-    <link rel="stylesheet" href="/estilos.css">
-    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">-->
-    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Balletin Dance</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="estilos.css" />
+    <link rel="icon" href="data/logo-balletin.png" />
 </head>
- <body>
-    <header class="header">
-   <div class="logo"> 
-    <img src="data/logo-balletin largo.png" alt="balletindance">
-   </div>
-    <nav>
-        <ul class="navegadores">
-            <li>Inicio</a></li>
-            <li>Edición digital</a></li>
-            <li>Capacitación docente</a></li>
-            <li>Eventos</a></li>
-        </ul> 
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <a class="navbar-brand" href="#">
+                <img class="logo" src="data/logo-balletin largo.png" alt="logo balletindance">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <ul class="navbar-nav ms-auto navegadores">
+                    <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Edición digital</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Capacitación docente</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Eventos</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
-</header>
-     <main>
-        <section class="landing">
-            
-        <div class="recompensa">
-            <h1>A pura danza <br> por tres días</h1> 
-            <p>Rellenando el formulario vas a estar <br> participando por una entrada a uno <br> de los días del evento “Bailando todo”</p>
-             <br>
-             <h4 class="cta"> Quiero ir! </h4> 
+    <header>
+        <div class="card text-bg-dark">
+            <article class="col-12 col-lg-12">
+                <img src="data/img00.jpg" class="card-img" alt="...">
+                <div class="card-img-overlay mt-5 ms-5">
+                    <h1 class="card-title mb-4">A pura danza <br> por tres días </h1>
+                    <p class="card-text mb-4">Rellenando el formulario vas a estar <br> participando por una entrada a
+                        uno <br> de los días del evento “Bailando todo“</p>
+                    <a class="btn btn-primary card-text" href="#" role="button">Quiero ir!</a>
+            </article>
+
+        </div>
+    </header>
+    <main>
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-md-4">
+                    <hr class="linea">
+                </div>
+                <div class="col-md-4 text-center">
+                    <h3>NUESTRO EQUIPO</h3>
+                </div>
+                <div class="col-md-4">
+                    <hr class="linea">
+                </div>
             </div>
-            <div class="foto">
-                <img src="data/img00.jpg">
-            </div>
-        </section>
-      <div>
-        <h3 class="titulos"> NUESTRO EQUIPO</h3>
+        </div>
+
         <ul class="profes">
             <li>
-        <img src="data/Recurso 1.png">
-        <h4>
-            Marilyn Panelo
-        </h4>
-        <p>  Profesara de danza clásica <br>en la Escuela de Danzas <br>Clásicas de La Plata. </p>
-    </li>
-    <li>
-        <img src="data/Recurso 1.png">
-        <h4>
-            Viktor Filimonov
-        </h4>
-        <p>  Profesor de danza clásica. <br>Primer bailarín del Ballet <br> del Teatro Argentino. </p>
-    </li>
-    <li>
-        <img src="data/Recurso 1.png">
-        <h4>
-           Antonella Tizzano
-        </h4>
-        <p> Profesora de danza jazz y <br> urbano. Estudios realizados <br> en Asociación Sarmiento.  </p>
-    </li>
-    <li>
-        <img src="data/Recurso 1.png">
-        <h4>
-            Sofia Mazza
-        </h4>
-        <p>  Profesora de danza <br> contemporánea en el <br> Teatro San Martín. </p>
-    </li>
-    </ul>
-</div>
+                <img src="data/Recurso 1.png">
+                <h4>
+                    Marilyn Panelo
+                </h4>
+                <p> Profesara de danza clásica <br>en la Escuela de Danzas <br>Clásicas de La Plata. </p>
+            </li>
+            <li>
+                <img src="data/Recurso 1.png">
+                <h4>
+                    Viktor Filimonov
+                </h4>
+                <p> Profesor de danza clásica. <br>Primer bailarín del Ballet <br> del Teatro Argentino. </p>
+            </li>
+            <li>
+                <img src="data/Recurso 1.png">
+                <h4>
+                    Antonella Tizzano
+                </h4>
+                <p> Profesora de danza jazz y <br> urbano. Estudios realizados <br> en Asociación Sarmiento. </p>
+            </li>
+            <li>
+                <img src="data/Recurso 1.png">
+                <h4>
+                    Sofia Mazza
+                </h4>
+                <p> Profesora de danza <br> contemporánea en el <br> Teatro San Martín. </p>
+            </li>
+        </ul>
+        </div>
         <section class="estilos">
             <h3 class="titulos"> ESTILOS</h3>
             <ul class="profes">
@@ -73,57 +100,57 @@
                     <div class="rectangulos">
                         <img src="data/estilos1.jpg" alt="danza clásica">
                     </div>
-            <h4>Clásico</h4>
-            <p> Técina Vaganova de la <br> escuela rusa </p>
-        </li>
-        <li>
-            <div class="rectangulos">
-                <img src="data/estilos2.jpg" alt="danza contemporánea">
-            </div>
-            <h4> Contemporáneo</h4>
-            <p> Técninca Graham <br>    </p>
-        </li>
-        <li>
-            <div class="rectangulos">
-            <img src="data/estilos3.jpg" alt="danza jazz">
-        </div>
-            <h4> Jazz </h4>
-            <p> Entrenamiento y <br> coreografía de Broadway </p>
-        </li>
-        <li>
-            <div class="rectangulos">
-            <img src="data/estilos4.jpg" alt="danza urbana">
-        </div>
-            <h4> Urbano</h4>
-            <p> Implementación de<br>improvisación </p>
-        </li>
-        </ul>
+                    <h4>Clásico</h4>
+                    <p> Técina Vaganova de la <br> escuela rusa </p>
+                </li>
+                <li>
+                    <div class="rectangulos">
+                        <img src="data/estilos2.jpg" alt="danza contemporánea">
+                    </div>
+                    <h4> Contemporáneo</h4>
+                    <p> Técninca Graham <br> </p>
+                </li>
+                <li>
+                    <div class="rectangulos">
+                        <img src="data/estilos3.jpg" alt="danza jazz">
+                    </div>
+                    <h4> Jazz </h4>
+                    <p> Entrenamiento y <br> coreografía de Broadway </p>
+                </li>
+                <li>
+                    <div class="rectangulos">
+                        <img src="data/estilos4.jpg" alt="danza urbana">
+                    </div>
+                    <h4> Urbano</h4>
+                    <p> Implementación de<br>improvisación </p>
+                </li>
+            </ul>
         </section>
         <section>
             <h2 class="titulos"> CRONOGRAMA </h2>
             <div id="carousel" class="carousel">
                 <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="data/cronograma1.jpg" class="tamaño" alt="viernes">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="data/cronograma2.jpg" class="tamaño" alt="sabado">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="data/cronograma3.jpg" class="tamaño" alt="domingo">
-                  </div>
+                    <div class="carousel-item active">
+                        <img src="data/cronograma1.jpg" class="tamaño" alt="viernes">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="data/cronograma2.jpg" class="tamaño" alt="sabado">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="data/cronograma3.jpg" class="tamaño" alt="domingo">
+                    </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
                 </button>
-              </div>
+            </div>
         </section>
-     <h3><a href="https://balletindance.com/">Revista</a></h3>
+        <h3><a href="https://balletindance.com/">Revista</a></h3>
     </main>
     <footer>
         <ul class="menu">
@@ -137,11 +164,17 @@
                 <p class="letras">Capacitación docente</p>
             </li>
             <li>
-                <p class="letras" >Tienda</p>
+                <p class="letras">Tienda</p>
             </li>
         </ul>
-<p class="letrastam">© Balletin Dance, La Revista Argentina de Danza - 2023 - Buenos Aires - Argentina</p>
+        <p class="letrastam">© Balletin Dance, La Revista Argentina de Danza - 2023 - Buenos Aires - Argentina</p>
     </footer>
- </body>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+<script>
+    src = "js/main.js";
+</script>
 
 </html>
