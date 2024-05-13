@@ -14,8 +14,14 @@ h1 {
 }
 
 h3 {
-    font-size: 35px ;
+    font-size: 35px;
     font-weight: semi-bold;
+    font-family: 'Poppins';
+}
+
+h4 {
+    font-size: 30px;
+    font-weight: bold;
 }
 
 p {
@@ -24,6 +30,7 @@ p {
 }
 
 .navbar {
+    font-family:'Poppins'; 
     color: #2C2121;
     padding: 5px 2%;
     height: 90px;
@@ -60,14 +67,13 @@ p {
     font-size: 20px;
     color: #2C2121;
     text-decoration: none;
+    padding: 0;
 }
 
-.navbar .navegadores .nav-link.active {
-    text-decoration: underline;
-    text-decoration-color: #E4B717;
-    text-underline-offset: 8px;
-    text-decoration-thickness: 3px;
-    text-decoration-skip-ink: none;
+.nav-underline .nav-link.active, .nav-underline .show>.nav-link {
+    font-weight:normal;
+    color: #2C2121;
+    border-bottom-color: #E4B717;
 }
 
 .btn-primary {
@@ -91,7 +97,9 @@ p {
     opacity: 1;
 }
 
-
+.row {
+    border-radius: 0;
+}
 
 
 
@@ -118,25 +126,15 @@ p {
 
 
 
-h4 {
-    font-size: 45px;
-    font-weight: 500;
-    font-display: #9B3232;
-}
+
 
 .titulos {
     margin-inline-start: 40%;
     font-size: 60px;
 }
 
-.profes {
-    list-style: none;
-}
 
-.profes li {
-    display: inline-block;
 
-}
 
 .estilos {
     background-color: #625b5b56;
