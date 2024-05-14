@@ -14,19 +14,35 @@ h1 {
 }
 
 h3 {
-    font-size: 35px;
-    font-weight: semi-bold;
+    font-size: 30px;
+    font-weight: bold;
     font-family: 'Poppins';
 }
 
 h4 {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
 }
 
-p {
+h6 {
     font-size: 25px;
-    font-weight: 100;
+    font-weight: 1;
+}
+
+.small {
+    font-size: 15px;
+}
+
+.smaller {
+    font-size: 18px;
+}
+
+.fs-4 {
+    font-size: 30px; 
+}
+
+.logo {
+    height: 50px;
 }
 
 .navbar {
@@ -34,10 +50,6 @@ p {
     color: #2C2121;
     padding: 5px 2%;
     height: 90px;
-}
-
-.logo {
-    height: 50px;
 }
 
 .navbar-brand {
@@ -52,10 +64,6 @@ p {
     list-style: none;
     margin: 0;
     padding: 0;
-}
-
-.navbar .navegadores {
-    margin-left: auto;
 }
 
 .navbar .navegadores .nav-item {
@@ -99,73 +107,33 @@ p {
 
 .row {
     border-radius: 0;
+    --bs-gutter-x: 0;
 }
 
-
-
-
-
-
-
-
-.landing {
-    background-color: black;
-    color: #FBF0F0;
-    height: fit-content;
-    display: flex;
-
+.card-img{
+    border-radius: 0;
 }
 
-.landing .foto img {
-    border-image-width: 30%;
-    max-height: 1100px;
-    align-content: end;
-}
-
-
-
-
-
-
-
-.titulos {
-    margin-inline-start: 40%;
-    font-size: 60px;
-}
-
-
-
-
-.estilos {
-    background-color: #625b5b56;
-}
-
-.rectangulos img {
-    height: auto;
-    width: 500px;
+.card {
+    border-radius: 0;
 }
 
 footer {
-    height: 400px;
     width: auto;
     background-color: #2C2121;
     color: #FBF0F0;
+    padding: 20px 0;
+}
+
+.footer-content {
+    padding: 20px; 
 }
 
 .menu li {
     list-style: none;
     display: inline-block;
     padding-inline: 20px;
-}
-
-.letras {
-    padding-top: 20px;
-    text-align: left;
-    font-size: 28px;
-}
-
-.letrastam {
-
     text-align: center;
-    font-size: 22px;
 }
+
+
