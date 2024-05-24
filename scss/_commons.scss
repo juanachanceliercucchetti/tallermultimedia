@@ -73,6 +73,23 @@ h5 {
     color: map-get($map: $paleta, $key: blanco);
 }
 
+.apuradanza{
+    color: map-get($map: $paleta, $key: rojo);
+}
+.rellenando{
+    background-color: map-get($map: $paleta, $key: form);
+    color: map-get($map: $paleta, $key: txtForm);
+}
+
+.resultado {
+    color: map-get($map: $paleta, $key: rojo);
+}
+
+.form-select{
+    background-color: map-get($map: $paleta, $key: form);
+    color: map-get($map: $paleta, $key: txtForm);
+   
+}
 footer {
     background-color: map-get($map: $paleta, $key: bgFooter);
     color: map-get($map: $paleta, $key: blanco);

@@ -29,6 +29,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     progressBars[0].classList.add('active');
 });
 
+// FORMULARIO----------------------
 
 //Variables
 const modal_Nombre = document.querySelector( '#exampleModal  input[type="text"]' );
