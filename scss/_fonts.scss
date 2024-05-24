@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+$mainFont: 'Poppins', sans-serif;
+
+// Pesos de la fuente
+$extraLight: 200;
+$regular: 400;
+$semiBold: 600;
+$extraBold: 800;
+
+// Tamaños de fuente
+$h1-large: clamp(3.5rem, 2rem + 5vw, 5rem); // 80px
+$h1-small: clamp(3rem, 2.5rem, 4.375rem); // 70px
+$h2: clamp(2.5rem, 1.5rem + 4vw, 3.75rem); // 60px
+$h3: clamp(1.5rem, 1rem + 2vw, 2rem); // 30px
+$h4: clamp(1.3125rem, 1rem + 1.5vw, 1.6875rem); // 27px
+$h5: clamp(1.5625rem, 1.25rem + 1.25vw, 1.5625rem); // 25px
+$h6-large: clamp(1.4375rem, 1rem + 1.25vw, 1.4375rem); // 23px
+$h6-small: clamp(1rem, 0.875rem + 0.5vw, 1rem); // 16px
+$small: clamp(1.125rem, 0.75rem + 0.75vw, 1.125rem); // 18px
+$smaller: clamp(0.9375rem, 0.75rem + 0.5vw, 1.25rem); // 15px
+$petit: clamp(0.8125rem, 0.75rem + 0.25vw, 0.8125rem); // 13px
+
+
+body {
+    font-family: $mainFont;
+}
+
+h1 {
+    font-size: $h1-large;
+    font-weight: $extraBold;
+    font-family: $mainFont;
+}
+
+@media (max-width: 820px) {
+    h1 {
+      font-size: $h1-small;
+    }
+    h6 {
+        font-size: $h6-small;
+      }
+  }
+
+h2 {
+    font-size: $h2;
+    font-weight: $extraBold;
+    font-family: $mainFont;
+}
+
+h3 {
+    font-size: $h3;
+    font-weight: $semiBold;
+    font-family: $mainFont;
+}
+
+h4 {
+    font-size: $h4;
+    font-weight: $semiBold;
+    font-family: $mainFont;
+}
+
+h5 {
+    font-size: $h5;
+    font-weight: $extraLight;
+    font-family: $mainFont;
+}
+
+h6 {
+    font-size: $h6-large;
+    font-weight: $extraLight;
+    font-family: $mainFont;
+}
+
+.small {
+    font-size: $small;
+    font-weight: $regular;
+    font-family: $mainFont;
+}
+
+.smaller {
+    font-size: $smaller;
+    font-weight: $regular;
+    font-family: $mainFont;
+}
+
+.petit {
+    font-size: $petit;
+    font-weight: $extraLight;
+    font-family: $mainFont;
+}
+
+.fs-4 {
+    font-size: $h3;
+}
+
+.nav-underline .nav-link.active,
+.nav-underline .show>.nav-link {
+    font-weight: $regular;
+    font-family: $mainFont;
+}
+
+.btn-primary {
+    font-weight: $semiBold;
+    font-size: $h5;
+    font-family: $mainFont;
+}

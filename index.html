@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet" />
-    <link rel="stylesheet" href="estilos.css" />
+    <link rel="stylesheet" href="scss/main.css" />
     <link rel="icon" href="data/logo-balletin.png" />
 </head>
 
@@ -34,130 +34,171 @@
             </div>
         </div>
     </nav>
+
     <header>
         <div class="card text-bg-dark">
-            <article class="col-12 col-lg-12">
-                <img src="data/img00.jpg" class="card-img" alt="...">
-                <div class="card-img-overlay my-5 ms-5">
-                    <h1 class="card-title mb-5 mt-3">A pura danza <br> por tres días </h1>
-                    <h6 class="card-text my-5">Rellenando el formulario vas a estar <br> participando por una entrada a
-                        uno <br> de los días del evento “Bailando todo“</h6>
-                    <a class="btn btn-primary card-text" href="#" role="button">Quiero ir!</a>
+            <article class="col-12 col-lg-12 position-relative">
+                <!-- Imagen para pantallas medianas y grandes -->
+                <img src="data/img00.jpg" class="card-img d-none d-md-block" alt="...">
+                <!-- Imagen para pantallas pequeñas -->
+                <img src="data/img00sm.png" class="card-img d-block d-md-none" alt="...">
+                <div class="card-img-overlay d-flex flex-column">
+                    <div class="text-start ms-lg-5">
+                        <h1 class="card-title mb-3 mt-5">A pura danza <br> por 3 días</h1>
+                        <!-- Texto para pantallas medianas y grandes -->
+                        <h6 class="card-text my-4 d-none d-md-block">
+                            Rellenando el formulario vas a estar <br>
+                            participando por una entrada a uno de los <br>
+                            días del evento “Bailando todo“ en CABA
+                        </h6>
+                        <!-- Texto para pantallas pequeñas -->
+                        <h6 class="card-text my-4 d-block d-md-none">
+                            Rellenando el formulario <br> vas
+                            a estar participando <br> por una
+                            entrada a uno <br>de los días del
+                            evento <br> “Bailando todo“ en CABA
+                        </h6>
+                    </div>
+                    <!-- Botón para pantallas medianas y grandes -->
+                    <div class="d-none d-md-flex justify-content-start mt-3 ms-lg-5">
+                        <a class="btn btn-primary" href="#" role="button">¡Quiero ir!</a>
+                    </div>
+                </div>
+                <!-- Botón para pantallas pequeñas -->
+                <div class="d-flex d-md-none justify-content-center position-absolute w-100" style="bottom: 100px;">
+                    <a class="btn btn-primary" href="#" role="button">¡Quiero ir!</a>
+                </div>
             </article>
-
         </div>
     </header>
+
+
+
+
     <main>
-
-        <div class="container my-5">
-            <div class="row">
-                <div class="col-md-4">
-                    <hr class="linea">
-                </div>
-                <div class="col-md-4 text-center">
-                    <h3>NUESTRO EQUIPO</h3>
-                </div>
-                <div class="col-md-4">
-                    <hr class="linea">
-                </div>
-            </div>
-        </div>
-
-        <article class="col-12 col-lg-12 ">
-            <div class="row text-center">
-                <div class="col-lg-3">
-                    <img class="my-3" src="data/profe1.png">
-                    <h4 class="my-3">
-                        Marilyn Panelo
-                    </h4>
-                    <p class="my-3"> Profesora de danza clásica <br>en la Escuela de Danzas <br>Clásicas de La Plata.
-                    </p>
-                </div>
-                <div class="col-lg-3">
-                    <img class="my-3" src="data/profe2.png">
-                    <h4 class="my-3">
-                        Viktor Filimonov
-                    </h4>
-                    <p class="my-3"> Profesor de danza clásica. <br>Primer bailarín del Ballet <br> del Teatro
-                        Argentino. </p>
-                </div>
-                <div class="col-lg-3">
-                    <img class="my-3" src="data/profe3.png">
-                    <h4 class="my-3">
-                        Antonella Tizzano
-                    </h4>
-                    <p class="my-3"> Profesora de danza jazz y <br> urbano. Estudios realizados <br> en Asociación
-                        Sarmiento. </p>
-                </div>
-                <div class="col-lg-3">
-                    <img class="my-3" src="data/profe4.png">
-                    <h4 class="my-3">
-                        Sofia Mazza
-                    </h4>
-                    <p class="my-3"> Profesora de danza <br> contemporánea en el <br> Teatro San Martín. </p>
-                </div>
-            </div>
-        </article>
-
-        <div class="estilos my-5">
-            <div class="container my-5">
+        <section>
+            <div class="container my-5 py-5">
                 <div class="row">
-                    <div class="col-md-5">
+                    <div class="col-md-4">
                         <hr class="linea">
                     </div>
-                    <div class="col-md-2 text-center">
-                        <h3>ESTILOS</h3>
+                    <div class="col-md-4 text-center">
+                        <h3>NUESTRO EQUIPO</h3>
                     </div>
-                    <div class="col-md-5">
+                    <div class="col-md-4">
                         <hr class="linea">
                     </div>
                 </div>
             </div>
-            <article class="col-12 col-lg-12 text-center">
-                <div class="row">
-                    <div class="card text-bg-dark col-lg-3 d-flex align-items-center justify-content-center">
-                        <img src="data/estilos1.jpg" class="card-img" alt="...">
-                        <div class="card-img-overlay d-flex flex-column align-items-center justify-content-center">
-                            <h4 class="card-title">Clásico</h4>
-                            <p class="card-text">Técnica Vaganova de la <br> escuela rusa </p>
-                        </div>
+            <article class="col-12 col-lg-12 ">
+                <div class="row text-center">
+                    <div class="col-md-6 col-lg-3">
+                        <img class="my-3" src="data/profe1.png">
+                        <h4 class="my-3">
+                            Marilyn Panelo
+                        </h4>
+                        <p class="my-3"> Profesora de danza clásica <br>en la Escuela de Danzas <br>Clásicas de La
+                            Plata.
+                        </p>
                     </div>
-                    <div class="card text-bg-dark col-lg-3 d-flex align-items-center justify-content-center">
-                        <img src="data/estilos2.jpg" class="card-img" alt="...">
-                        <div class="card-img-overlay d-flex flex-column align-items-center justify-content-center">
-                            <h4 class="card-title">Contemporáneo</h4>
-                            <p class="card-text">Técnica Graham <br> con secuencias de cuartas </p>
-                        </div>
+                    <div class="col-md-6 col-lg-3">
+                        <img class="my-3" src="data/profe2.png">
+                        <h4 class="my-3">
+                            Viktor Filimonov
+                        </h4>
+                        <p class="my-3"> Profesor de danza clásica. <br>Primer bailarín del Ballet <br> del Teatro
+                            Argentino. </p>
                     </div>
-                    <div class="card text-bg-dark col-lg-3 d-flex align-items-center justify-content-center">
-                        <img src="data/estilos3.jpg" class="card-img" alt="...">
-                        <div class="card-img-overlay d-flex flex-column align-items-center justify-content-center">
-                            <h4 class="card-title">Jazz</h4>
-                            <p class="card-text">Entrenamiento y <br> coreografía de Broadway</p>
-                        </div>
+                    <div class="col-md-6 col-lg-3">
+                        <img class="my-3" src="data/profe3.png">
+                        <h4 class="my-3">
+                            Antonella Tizzano
+                        </h4>
+                        <p class="my-3"> Profesora de danza jazz y <br> urbano. Estudios realizados <br> en Asociación
+                            Sarmiento. </p>
                     </div>
-                    <div class="card text-bg-dark col-lg-3 d-flex align-items-center justify-content-center">
-                        <img src="data/estilos4.jpg" class="card-img" alt="...">
-                        <div class="card-img-overlay d-flex flex-column align-items-center justify-content-center">
-                            <h4 class="card-title">Urbano</h4>
-                            <p class="card-text">Implementación de <br> improvisación </p>
-                        </div>
+                    <div class="col-md-6 col-lg-3">
+                        <img class="my-3" src="data/profe4.png">
+                        <h4 class="my-3">
+                            Sofia Mazza
+                        </h4>
+                        <p class="my-3"> Profesora de danza <br> contemporánea en el <br> Teatro San Martín. </p>
                     </div>
                 </div>
             </article>
-        </div>
+        </section>
+
         <section>
-            <div id="carouselExampleAutoplaying" class="carousel slide my-5" data-bs-ride="carousel">
+            <div class="estilos pt-3 pb-5 my-5">
+                <div class="container my-5">
+                    <div class="row">
+                        <div class="col-md-4 col-lg-5">
+                            <hr class="linea">
+                        </div>
+                        <div class="col-md-4 col-lg-2 text-center">
+                            <h3>ESTILOS</h3>
+                        </div>
+                        <div class="col-md-4 col-lg-5">
+                            <hr class="linea">
+                        </div>
+                    </div>
+                </div>
+                <article class="col-12 col-lg-12 text-center">
+                    <div class="row">
+                        <div
+                            class="card col-md-6 col-lg-3 p-2 d-flex align-items-center justify-content-center custom-card">
+                            <img src="data/estilos1.jpg" class="card-img" alt="...">
+                            <div class="card-img-overlay d-flex flex-column align-items-center justify-content-center">
+                                <h4 class="card-title">Clásico</h4>
+                                <p class="card-text">Técnica Vaganova de la <br> escuela rusa </p>
+                            </div>
+                        </div>
+                        <div
+                            class="card col-md-6 col-lg-3 p-2 d-flex align-items-center justify-content-center custom-card">
+                            <img src="data/estilos2.jpg" class="card-img" alt="...">
+                            <div class="card-img-overlay d-flex flex-column align-items-center justify-content-center">
+                                <h4 class="card-title">Contemporáneo</h4>
+                                <p class="card-text">Técnica Graham <br> con secuencias de cuartas </p>
+                            </div>
+                        </div>
+                        <div
+                            class="card col-md-6 col-lg-3 p-2 d-flex align-items-center justify-content-center custom-card">
+                            <img src="data/estilos3.jpg" class="card-img" alt="...">
+                            <div class="card-img-overlay d-flex flex-column align-items-center justify-content-center">
+                                <h4 class="card-title">Jazz</h4>
+                                <p class="card-text">Entrenamiento y <br> coreografía de Broadway</p>
+                            </div>
+                        </div>
+                        <div
+                            class="card col-md-6 col-lg-3 p-2 d-flex align-items-center justify-content-center custom-card">
+                            <img src="data/estilos4.jpg" class="card-img" alt="...">
+                            <div class="card-img-overlay d-flex flex-column align-items-center justify-content-center">
+                                <h4 class="card-title">Urbano</h4>
+                                <p class="card-text">Implementación de <br> improvisación </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <div id="carouselExampleFadeAutoplay" class="carousel slide carousel-fade my-5" data-bs-ride="carousel">
+                <div class="progress-container">
+                    <div class="progress-bar"></div>
+                    <div class="progress-bar"></div>
+                    <div class="progress-bar"></div>
+                </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="data/cronograma1.jpg" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-flex align-items-center justify-content-center">
                             <div>
                                 <h5>Cronograma</h5>
-                                <h2> VIERNES 7</h2>
-                                <p> <b> 16 a 17:30 </b> <br> clase de danza clásica</p>
-                                <p> <b> 18 a 19:30 </b> <br> clase de danza contemporánea</p>
-                                <p> <b> 20 a 21:30 </b> <br> clase de danza jazz</p>
+                                <h2>VIERNES 7</h2>
+                                <p><b>16 a 17:30</b><br> clase de danza clásica</p>
+                                <p><b>18 a 19:30</b><br> clase de danza contemporánea</p>
+                                <p><b>20 a 21:30</b><br> clase de danza jazz</p>
                             </div>
                         </div>
                     </div>
@@ -166,10 +207,10 @@
                         <div class="carousel-caption d-flex align-items-center justify-content-center">
                             <div>
                                 <h5>Cronograma</h5>
-                                <h2> SÁBADO 8</h2>
-                                <p> <b> 16 a 17:30 </b> <br> clase de danza clásica</p>
-                                <p> <b> 18 a 19:30 </b> <br> clase de danza contemporánea</p>
-                                <p> <b> 20 a 21:30 </b> <br> clase de danza urbana</p>
+                                <h2>SÁBADO 8</h2>
+                                <p><b>16 a 17:30</b><br> clase de danza clásica</p>
+                                <p><b>18 a 19:30</b><br> clase de danza contemporánea</p>
+                                <p><b>20 a 21:30</b><br> clase de danza urbana</p>
                             </div>
                         </div>
                     </div>
@@ -178,28 +219,84 @@
                         <div class="carousel-caption d-flex align-items-center justify-content-center">
                             <div>
                                 <h5>Cronograma</h5>
-                                <h2> DOMINGO 9</h2>
-                                <p> <b> 16 a 17:30 </b> <br> clase de danza clásica</p>
-                                <p> <b> 18 a 19:30 </b> <br> clase de danza contemporánea</p>
-                                <p> <b> 20 a 21:30 </b> <br> clase de danza jazz</p>
+                                <h2>DOMINGO 9</h2>
+                                <p><b>16 a 17:30</b><br> clase de danza clásica</p>
+                                <p><b>18 a 19:30</b><br> clase de danza contemporánea</p>
+                                <p><b>20 a 21:30</b><br> clase de danza jazz</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFadeAutoplay"
                     data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFadeAutoplay"
                     data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
+
+
         </section>
+        <!-- comienza el form -->
+        <section class="d-flex col-lg-12 col-sm-12">
+            <img src="data/cta.png" class="col-lg-6 col-md-6 col-sm-4">
+            <div class="col-lg-1 col-md-1">
+            </div>
+            <form class="form col-lg-4 col-md-4 col-sm-12">
 
+                <input class="rellenando my-3" type="text" name="Nombre" id="Nombre" placeholder="Nombre completo"
+                    required>
+                <input class="rellenando mt-3 mb-5" type="email" name="Mail" id="Mail"
+                    placeholder="Email o correo electrónico" required>
+                <input class="btn-primary my-5" type="submit" id="enviar" value="Participa por una entrada"
+                    data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <br>
 
+                <div class="resultado">
+
+                </div>
+            </form>
+
+        </section>
+        <!-- Button trigger modal -->
+
+        <!-- Modal -->
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="apuradanza fs-5" id="exampleModalLabel">A pura danza por 3 días</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body ">
+                        <input class="rellenando my-3" type="text" name="Nombre" id="Nombre"
+                            placeholder="Nombre completo" required>
+                        <input class="rellenando mt-3 mb-5" type="email" name="Mail" id="Mail"
+                            placeholder="Email o correo electrónico" required>
+                    </div>
+
+                    <select class="form-select mb-5" aria-label="select ">
+                        <option selected>Clase que queres asistir</option>
+                        <option value="1">Danza clásica</option>
+                        <option value="2">Danza contemporánea</option>
+                        <option value="3">Danza jazz</option>
+                        <option value="4">Danza urbana</option>
+                    </select>
+
+                    <div class="modal-footer">
+                        <!--  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+
+                        <button type="button" class="btn btn-primary" id="obtener">Participa</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- termina el form -->
     </main>
     <footer class="footer mt-auto">
         <div class="container-fluid">
@@ -207,22 +304,22 @@
                 <div class="col-12 col-lg-6">
                     <ul class="menu">
                         <li class="mt-lg-4 mt-5">
-                            <p class="letras smaller">Inicio</p>
+                            <p class="letras small">Inicio</p>
                         </li>
                         <li class="mt-lg-4 mt-5">
-                            <p class="letras smaller">Edición digital</p>
+                            <p class="letras small">Edición digital</p>
                         </li>
                         <li class="mt-lg-4 mt-5">
-                            <p class="letras smaller">Capacitación docente</p>
+                            <p class="letras small">Capacitación docente</p>
                         </li>
                         <li class="mt-lg-4 mt-5">
-                            <p class="letras smaller">Tienda</p>
+                            <p class="letras small">Tienda</p>
                         </li>
                     </ul>
                 </div>
                 <div class="col-12 col-lg-6">
                     <nav class="d-flex justify-content-evenly align-items-center">
-                        <a href="" target="_blank" class="mt-lg-4 mt-3 text-white"><i
+                        <a href="" target="_blank" class="mt-lg-4 mt-2 text-white"><i
                                 class="bi bi-facebook fs-4"></i></a>
                         <a href="" target="_blank" class="mt-lg-4 mt-2 text-white"><i class="bi bi-tiktok fs-4"></i></a>
                         <a href="" target="_blank" class="mt-lg-4 mt-2 text-white"><i
@@ -236,23 +333,21 @@
             </div>
             <div class="row">
                 <div class="col-12 text-center mt-5">
-                    <small class="text-white smaller">&copy; Balletin Dance, La Revista
+                    <p class="text-white petit">&copy; Balletin Dance, La Revista
                         Argentina de Danza - 2023 - Buenos Aires -
-                        Argentina</small>
+                        Argentina</p>
                 </div>
             </div>
         </div>
     </footer>
 
 
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
+    <script src="script.js"></script>
 
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
-<script>
-    src = "js/main.js";
-</script>
 
 </html>
