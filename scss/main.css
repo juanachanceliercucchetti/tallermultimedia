@@ -8,7 +8,6 @@ h5 {
   color: #E4B717;
 }
 
-
 .navbar {
   color: #131111;
 }
@@ -59,8 +58,30 @@ h5 {
   color: #FBF0F0;
 }
 
+.apuradanza {
+  color: #cf292c;
+}
+
+.rellenando {
+  background-color: #CDCDCD;
+  color: #3E3E3E;
+}
+
+.resultado {
+  color: #cf292c;
+}
+
+.form-select {
+  background-color: #CDCDCD;
+  color: #3E3E3E;
+}
+
 footer {
   background-color: #2C2121;
+  color: #FBF0F0;
+}
+
+.menu li a {
   color: #FBF0F0;
 }
 
@@ -119,14 +140,8 @@ h6 {
 }
 
 .smaller {
-  font-size: clamp(0.9375rem, 0.75rem + 0.5vw, 1.25rem);
-  font-weight: 400;
-  font-family: "Poppins", sans-serif;
-}
-
-.petit {
   font-size: clamp(0.8125rem, 0.75rem + 0.25vw, 0.8125rem);
-  font-weight: 200;
+  font-weight: 400;
   font-family: "Poppins", sans-serif;
 }
 
@@ -151,71 +166,55 @@ h6 {
   padding: 0;
 }
 
-/* @media (max-width: 992px) {
+@media (max-width: 992px) {
   .navbar-collapse {
-    background-color: white; 
+    background-color: white; /* Fondo blanco para el menú desplegable */
     width: 100%;
   }
   .navbar-nav {
     width: 100%;
-    height: 200px;
+    height: 200px; /* Altura añadida de nuevo */
     text-align: center;
-
   }
   .navbar-nav .nav-item {
-    display: block; 
+    display: block; /* Asegúrate de que los elementos sean bloques */
     width: 100%;
   }
   .navbar-nav .nav-link {
     padding: 10px 0;
     border-bottom: 1px solid #ddd;
-    color: black;
+    color: black; /* Color predeterminado del enlace */
   }
   .navbar-nav .nav-link:hover {
-    color: black; 
+    color: black; /* Color del enlace en estado hover */
   }
-  .navbar {
-    padding: 5px 2%;
-    height: 90px;
-    
-  }
-  
-  .navbar .brand {
-    margin-right: auto;
-  }
-  
-  .navbar .nav {
- 
-    margin-left: auto;
-    display: flex; 
-    flex-direction: column;
-  } */
-  
-  /* .navegadores {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .navegadores .nav-item {
-    display: inline-block; 
-    margin-left: 20px;
-  }
-  
-  .navegadores .nav-link {
-    text-decoration: none;
-    padding: 0;
-  }
-  
-} */
-@media (max-width: 992px) {
-  .navbar .nav {
- 
-    margin-left: auto;
-    display: flex; 
-    flex-direction: column;
-  }
+}
+.navbar {
+  padding: 5px 2%;
+}
 
+.navbar .brand {
+  margin-right: auto;
+}
+
+.navbar .nav {
+  margin-left: auto;
+}
+
+.navegadores {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navegadores .nav-item {
+  display: inline-block; /* Estilo general para dispositivos grandes */
+  margin-left: 20px;
+}
+
+.navegadores .nav-link {
+  text-decoration: none;
+  padding: 0;
 }
 
 .logo {
@@ -235,10 +234,6 @@ h6 {
 .row {
   border-radius: 0;
   --bs-gutter-x: 0;
-}
-
-.estilos {
-  background-color: #BEB4B4;
 }
 
 .custom-card {
@@ -314,32 +309,20 @@ h6 {
   flex-direction: column;
 }
 
-.apuradanza {
-  color: #eb1317;
-}
-
 .rellenando {
-  background-color: #CDCDCD;
   padding: 20px;
   border: 12px;
-  color: rgba(96, 96, 96, 0.7176470588);
   display: flex;
   flex-direction: column;
   width: 100%;
 }
 
-.resultado {
-  color: #eb1317;
-}
-
 .form-select {
   display: flex;
-  background-color: #CDCDCD;
   padding: 20px;
   margin-left: 3%;
   border: 12px;
   width: 94%;
-  color: rgba(96, 96, 96, 0.7176470588);
 }
 
 /* GRACIAS */
@@ -356,9 +339,12 @@ footer {
 footer .content {
   padding: 20px;
 }
-footer .menu li {
+footer .menu {
   list-style: none;
+}
+footer .menu li a {
   display: inline-block;
   padding-inline: 20px;
   text-align: center;
+  text-decoration: none;
 }/*# sourceMappingURL=main.css.map */

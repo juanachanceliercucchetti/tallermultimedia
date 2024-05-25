@@ -18,8 +18,7 @@ $h5: clamp(1.5625rem, 1.25rem + 1.25vw, 1.5625rem); // 25px
 $h6-large: clamp(1.4375rem, 1rem + 1.25vw, 1.4375rem); // 23px
 $h6-small: clamp(1rem, 0.875rem + 0.5vw, 1rem); // 16px
 $small: clamp(1.125rem, 0.75rem + 0.75vw, 1.125rem); // 18px
-$smaller: clamp(0.9375rem, 0.75rem + 0.5vw, 1.25rem); // 15px
-$petit: clamp(0.8125rem, 0.75rem + 0.25vw, 0.8125rem); // 13px
+$smaller: clamp(0.8125rem, 0.75rem + 0.25vw, 0.8125rem); // 13px
 
 
 body {
@@ -83,11 +82,7 @@ h6 {
     font-family: $mainFont;
 }
 
-.petit {
-    font-size: $petit;
-    font-weight: $extraLight;
-    font-family: $mainFont;
-}
+
 
 .fs-4 {
     font-size: $h3;

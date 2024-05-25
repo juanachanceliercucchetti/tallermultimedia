@@ -45,8 +45,8 @@ h5 {
     color: map-get($map: $paleta, $key: negro);
 }
 
-.navbar-toggler{
-    border: map-get($map: $paleta, $key:transparente );
+.navbar-toggler {
+    border: map-get($map: $paleta, $key: transparente);
 }
 
 .btn-primary {
@@ -73,10 +73,11 @@ h5 {
     color: map-get($map: $paleta, $key: blanco);
 }
 
-.apuradanza{
+.apuradanza {
     color: map-get($map: $paleta, $key: rojo);
 }
-.rellenando{
+
+.rellenando {
     background-color: map-get($map: $paleta, $key: form);
     color: map-get($map: $paleta, $key: txtForm);
 }
@@ -85,12 +86,19 @@ h5 {
     color: map-get($map: $paleta, $key: rojo);
 }
 
-.form-select{
+.form-select {
     background-color: map-get($map: $paleta, $key: form);
     color: map-get($map: $paleta, $key: txtForm);
-   
+
 }
+
 footer {
     background-color: map-get($map: $paleta, $key: bgFooter);
     color: map-get($map: $paleta, $key: blanco);
+}
+
+.menu {
+    li a {
+        color: map-get($map: $paleta, $key: blanco);
+    }
 }
