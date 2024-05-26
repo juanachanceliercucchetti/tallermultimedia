@@ -25,9 +25,15 @@
     .navbar-nav .nav-link:hover {
       color: black; /* Color del enlace en estado hover */
     }
+   
+    .carousel-item .carousel-caption{
+        align-items: start;
+    }
   }
   
-
+  .carousel-caption{
+    align-items: center;
+}
 .navbar {
     padding: 5px 2%;
 }
@@ -163,7 +169,6 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    
 }
 
 .rellenando{

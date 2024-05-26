@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet" />
-    <link rel="stylesheet" href="scss/main.css" />
+   <link rel="stylesheet" href="scss/main.css" />
     <link rel="icon" href="data/logo-balletin.png" />
 </head>
 
@@ -31,7 +31,7 @@
                     <li class="nav-item"><a class="nav-link" href="#Equipo">Equipo</a></li>
                     <li class="nav-item"><a class="nav-link" href="#Estilos">Estilos</a></li>
                     <li class="nav-item"><a class="nav-link" href="#Cronograma">Cronograma</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#Evento">Evento</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#Evento">Evento</a></li>
                 </ul>
             </div>
             
@@ -186,7 +186,7 @@
                 </article>
             </div>
         </section>
-
+       
         <section id="Cronograma">
             <div id="carouselExampleFadeAutoplay" class="carousel slide carousel-fade my-5" data-bs-ride="carousel">
                 <div class="progress-container">
@@ -196,7 +196,9 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="data/cronograma1.jpg" class="d-block w-100" alt="...">
+                        <img src="data/cronograma1.jpg" class="card-img d-none d-md-block" alt="...">
+                        <img src="data/viernes.png" class="card-img d-block d-md-none" alt="...">
+
                         <div class="carousel-caption d-flex align-items-center justify-content-center">
                             <div>
                                 <h5>Cronograma</h5>
@@ -208,7 +210,8 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="data/cronograma2.jpg" class="d-block w-100" alt="...">
+                        <img src="data/cronograma2.jpg" class="card-img d-none d-md-block" alt="...">
+                        <img src="data/sabado.png" class="card-img d-block d-md-none" alt="...">
                         <div class="carousel-caption d-flex align-items-center justify-content-center">
                             <div>
                                 <h5>Cronograma</h5>
@@ -220,8 +223,9 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="data/cronograma3.png" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-flex align-items-center justify-content-center">
+                        <img src="data/cronograma3.png" class="card-img d-none d-md-block" alt="...">
+                        <img src="data/domingo.png" class="card-img d-block d-md-none" alt="...">
+                        <div class="carousel-caption d-flex justify-content-center">
                             <div>
                                 <h5>Cronograma</h5>
                                 <h2>DOMINGO 9</h2>
@@ -250,10 +254,10 @@
         <section class="d-flex flex-column flex-md-row col-12" id="form">
             <img src="data/cta.png" class="col-12 col-md-6">
             <div class="col-12 col-md-1"></div>
-            <form class="form col-12 col-md-4">
+            <form class="form col-10 col-md-4">
                 <input class="rellenando my-3" type="text" name="Nombre" id="Nombre" placeholder="Nombre completo" required>
                 <input class="rellenando mt-3 mb-5" type="email" name="Mail" id="Mail" placeholder="Email o correo electrónico" required>
-                <input class="btn-primary my-5" type="submit" id="enviar" value="Participa por una entrada" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <input class="btn-primary" type="submit" id="enviar" value="Participa por una entrada" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <br>
                 <div class="resultado"></div>
             </form>
@@ -271,7 +275,7 @@
                         <h1 class="apuradanza fs-5" id="exampleModalLabel">A pura danza por 3 días</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body ">
+                    <div class="modal-body">
                         <input class="rellenando my-3" type="text" name="Nombre" id="Nombre"
                             placeholder="Nombre completo" required>
                         <input class="rellenando mt-3 mb-5" type="email" name="Mail" id="Mail"

@@ -73,7 +73,6 @@ h5 {
 
 .form-select {
   background-color: #CDCDCD;
-  color: #3E3E3E;
 }
 
 footer {
@@ -187,6 +186,26 @@ h6 {
   }
   .navbar-nav .nav-link:hover {
     color: black; /* Color del enlace en estado hover */
+  } 
+  /*AGREDADO*/
+  .form{
+    align-self: center;   /*AGREDADO*/
+    display: flex;   /*AGREDADO*/
+    flex-direction: column;   /*AGREDADO*/
+    border-radius: 30px;   /*AGREDADO*/
+    padding: 20px;   /*AGREDADO*/
+    max-width: 500px;    /*AGREDADO*/
+    width: 90%;    /*AGREDADO*/
+    margin: auto;   /*AGREDADO*/
+
+  }
+  .form .btn-primary{ 
+     font-size:larger; /*AGREDADO*/
+  }
+  .fondo {
+    align-items: center; /* AGREGADO */
+    width: auto; /* AGREGADO */
+    height: 100%;
   }
 }
 .navbar {
@@ -223,6 +242,7 @@ h6 {
 
 .btn-primary {
   border-radius: 0;
+  color: #FBF0F0;  /* AGREGADO */
   padding: 5px 40px;
 }
 
@@ -330,6 +350,7 @@ h6 {
   width: 100%;
   height: auto;
   margin: 0;
+  filter: brightness(0.5); /* AGREGADO */
 }
 
 footer {

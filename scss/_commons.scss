@@ -54,6 +54,7 @@ h5 {
     border-color: map-get($map: $paleta, $key: rojo);
 }
 
+
 .btn-primary:hover {
     background-color: map-get($map: $paleta, $key: rojoHover);
     border-color: map-get($map: $paleta, $key: rojoHover);
@@ -89,8 +90,9 @@ h5 {
 .form-select {
     background-color: map-get($map: $paleta, $key: form);
     color: map-get($map: $paleta, $key: txtForm);
-
+    
 }
+
 
 footer {
     background-color: map-get($map: $paleta, $key: bgFooter);

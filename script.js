@@ -38,6 +38,7 @@ const input_Nombre = document.getElementById("Nombre");
 const input_Mail = document.getElementById("Mail");
 const input_submit = document.getElementById("enviar");
 const input_obtener = document.getElementById("obtener");
+
 console.log(input_Nombre);
 console.log(input_submit);
 //
@@ -45,6 +46,21 @@ input_submit.addEventListener("click", enviarformulario);
 input_obtener.addEventListener("click", guardardatos);
 function enviarformulario(event) {
     event.preventDefault();
+    var valor_Nombre = input_Nombre.value.trim();
+    var valor_Mail = input_Mail.value.trim();
+    // Detener la ejecución de la función si algún campo está vacío
+    if (valor_Nombre === '' || valor_Mail === '' ) {
+        alert('Por favor, completa todos los campos del formulario para participar del evento!');
+        return false; 
+    }
+    
+    //PLACEHOLDER
+    var placeholder_Nombre = document.getElementById("Nombre-placeholder");
+    var placeholder_Mail = document.getElementById("Mail-placeholder");
+
+
+    placeholder_Nombre.innerHTML = valor_Nombre;
+    placeholder_Mail.innerHTML = valor_Mail;
     //mostrar con enviar
     modal_Nombre.value = input_Nombre.value;
     modal_Mail.value = input_Mail.value;
