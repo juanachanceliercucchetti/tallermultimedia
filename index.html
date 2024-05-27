@@ -27,11 +27,10 @@
             
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#Inicio">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="#Equipo">Equipo</a></li>
                     <li class="nav-item"><a class="nav-link" href="#Estilos">Estilos</a></li>
                     <li class="nav-item"><a class="nav-link" href="#Cronograma">Cronograma</a></li>
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#Evento">Evento</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#form">Evento</a></li>
                 </ul>
             </div>
             
@@ -69,8 +68,8 @@
                     </div>
                 </div>
                 <!-- Botón para pantallas pequeñas -->
-                <div class="d-flex d-md-none justify-content-center position-absolute w-100" style="bottom: 100px;">
-                    <a class="btn btn-primary" href="#" role="button">¡Quiero ir!</a>
+                <div class="d-flex d-md-none justify-content-center position-absolute w-100" style="bottom: 80px;"> 
+                    <a class="btn btn-primary" href="#form" role="button">¡Quiero ir!</a>
                 </div>
             </article>
         </div>
@@ -198,8 +197,7 @@
                     <div class="carousel-item active">
                         <img src="data/cronograma1.jpg" class="card-img d-none d-md-block" alt="...">
                         <img src="data/viernes.png" class="card-img d-block d-md-none" alt="...">
-
-                        <div class="carousel-caption d-flex align-items-center justify-content-center">
+                        <div class="carousel-caption d-flex align-items-center justify-content-center h-100">
                             <div>
                                 <h5>Cronograma</h5>
                                 <h2>VIERNES 7</h2>
@@ -212,7 +210,7 @@
                     <div class="carousel-item">
                         <img src="data/cronograma2.jpg" class="card-img d-none d-md-block" alt="...">
                         <img src="data/sabado.png" class="card-img d-block d-md-none" alt="...">
-                        <div class="carousel-caption d-flex align-items-center justify-content-center">
+                        <div class="carousel-caption d-flex align-items-center justify-content-center h-100">
                             <div>
                                 <h5>Cronograma</h5>
                                 <h2>SÁBADO 8</h2>
@@ -225,7 +223,7 @@
                     <div class="carousel-item">
                         <img src="data/cronograma3.png" class="card-img d-none d-md-block" alt="...">
                         <img src="data/domingo.png" class="card-img d-block d-md-none" alt="...">
-                        <div class="carousel-caption d-flex justify-content-center">
+                        <div class="carousel-caption d-flex align-items-center justify-content-center h-100">
                             <div>
                                 <h5>Cronograma</h5>
                                 <h2>DOMINGO 9</h2>
@@ -236,32 +234,33 @@
                         </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFadeAutoplay"
-                    data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFadeAutoplay" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFadeAutoplay"
-                    data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFadeAutoplay" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
-
-
         </section>
+        
+
+
         <!-- comienza el form -->
-        <section class="d-flex flex-column flex-md-row col-12" id="form">
+        <section id="form"class="d-flex flex-column flex-md-row col-12">
             <img src="data/cta.png" class="col-12 col-md-6">
             <div class="col-12 col-md-1"></div>
-            <form class="form col-10 col-md-4">
+            <form class="form col-12 col-md-5">
                 <input class="rellenando my-3" type="text" name="Nombre" id="Nombre" placeholder="Nombre completo" required>
                 <input class="rellenando mt-3 mb-5" type="email" name="Mail" id="Mail" placeholder="Email o correo electrónico" required>
-                <input class="btn-primary" type="submit" id="enviar" value="Participa por una entrada" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <input class="btn-primary" type="submit" id="enviar" value="Participá" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <br>
                 <div class="resultado"></div>
             </form>
         </section>
+        
+        
         
         
         <!-- Button trigger modal -->
@@ -317,9 +316,6 @@
                         <li class="mt-lg-4 mt-3">
                             <a class="small d-inline-block" href="#Cronograma">Cronograma</a>
                         </li>
-                        <li class="mt-lg-4 mt-3">
-                            <a class="small d-inline-block" href="#Evento">Evento</a>
-                        </li>
                     </ul>
                 </div>
                 <div class="col-12 col-lg-4">
@@ -345,17 +341,10 @@
             </div>
         </div>
     </footer>
-    
-    
-    
-
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
         </script>
     <script src="script.js"></script>
-
 </body>
-
 </html>
