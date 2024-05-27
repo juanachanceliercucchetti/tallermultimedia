@@ -12,6 +12,7 @@ $extraBold: 800;
 $h1-large: clamp(3.5rem, 2rem + 5vw, 5rem); // 80px
 $h1-small: clamp(3rem, 2.5rem, 4.375rem); // 70px
 $h2: clamp(2.5rem, 1.5rem + 4vw, 3.75rem); // 60px
+$h2-small: clamp(2.6875rem, 2.3125rem + 2vw, 2.6875rem);
 $h3: clamp(1.5rem, 1rem + 2vw, 2rem); // 30px
 $h4: clamp(1.3125rem, 1rem + 1.5vw, 1.6875rem); // 27px
 $h5: clamp(1.5625rem, 1.25rem + 1.25vw, 1.5625rem); // 25px
@@ -20,6 +21,14 @@ $h6-small: clamp(0.875rem, 0.75rem + 0.25vw, 0.875rem); // 14px
 $small: clamp(1.125rem, 0.75rem + 0.75vw, 1.125rem); // 18px
 $smaller: clamp(0.8125rem, 0.75rem + 0.25vw, 0.8125rem); // 13px
 
+@media (max-width: 768px) {
+    h1 {
+      font-size: $h1-small;
+    }
+    h6 {
+        font-size: $h6-small;
+      }
+  }
 
 body {
     font-family: $mainFont;
@@ -31,18 +40,15 @@ h1 {
     font-family: $mainFont;
 }
 
-@media (max-width: 768px) {
-    h1 {
-      font-size: $h1-small;
-    }
-    h6 {
-        font-size: $h6-small;
-      }
-  }
-
 h2 {
     font-size: $h2;
     font-weight: $extraBold;
+    font-family: $mainFont;
+}
+
+.h2-small {
+    font-size: $h2-small;
+    font-weight: $regular;
     font-family: $mainFont;
 }
 
@@ -97,3 +103,4 @@ h6 {
     font-size: $h5;
     font-family: $mainFont;
 }
+

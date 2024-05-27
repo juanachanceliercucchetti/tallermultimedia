@@ -108,6 +108,10 @@ input.btn-primary:active {
     color: map-get($map: $paleta, $key: txtForm);
 }
 
+.card {
+    --bs-card-border-color: map-get($map: $paleta, $key: transparente)
+  }
+
 footer {
     background-color: map-get($map: $paleta, $key: bgFooter);
     color: map-get($map: $paleta, $key: blanco);
@@ -119,8 +123,15 @@ footer {
     }
 }
 
+#form {
+    b {
+        color: map-get($map: $paleta, $key: acento);
+    }
+}
+
 #Gracias {
     a {
         color: map-get($map: $paleta, $key: blanco);
     }
 }
+

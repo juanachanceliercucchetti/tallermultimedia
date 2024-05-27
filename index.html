@@ -46,16 +46,16 @@
                 <!-- Imagen para pantallas pequeñas -->
                 <img src="data/img00sm.png" class="card-img d-block d-md-none" alt="...">
                 <div class="card-img-overlay d-flex flex-column">
-                    <div class="text-start ms-lg-5">
-                        <h1 class="card-title mb-3 mt-5">A pura danza <br> por 3 días</h1>
+                    <div class="text-start ms-lg-5 ">
+                        <h1 class="card-title mb-3  my-md-3 my-lg-5">A pura danza <br> por 3 días</h1>
                         <!-- Texto para pantallas medianas y grandes -->
-                        <h6 class="card-text my-4 d-none d-md-block">
+                        <h6 class="card-text my-2 d-none d-md-block my-md-3">
                             Rellenando el formulario vas a estar <br>
                             participando por una entrada a uno de los <br>
                             días del evento “Bailando todo“ en CABA
                         </h6>
                         <!-- Texto para pantallas pequeñas -->
-                        <h6 class="card-text my-4 d-block d-md-none">
+                        <h6 class="card-text my-1 d-block d-md-none my-md-3">
                             Rellenando el formulario <br> vas
                             a estar participando <br> por una
                             entrada a uno <br>de los días del
@@ -63,7 +63,7 @@
                         </h6>
                     </div>
                     <!-- Botón para pantallas medianas y grandes -->
-                    <div class="d-none d-md-flex justify-content-start mt-3 ms-lg-5">
+                    <div class="d-none d-md-flex justify-content-start mt-lg-5 my-md-3 ms-lg-5">
                         <a class="btn btn-primary boton" href="#form" role="button">¡Quiero ir!</a>
                     </div>
                 </div>
@@ -249,7 +249,12 @@
 
         <!-- comienza el form -->
         <section id="form"class="d-flex flex-column flex-md-row col-12">
-            <img src="data/cta.png" class="col-12 col-md-6">
+                <div class="card col-12 col-md-6">
+                  <img src="data/img-form.png" class="card-img" alt="...">
+                  <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                    <h2 class="card-title text-center h2-small">Seminario <br> intensivo de <br> <b>Danzas</b> en <b>CABA</b></h2>
+                  </div>
+                </div>
             <div class="col-12 col-md-1"></div>
             <form class="form col-10 col-md-4">
                 <input class="rellenando my-3" type="text" name="Nombre" id="Nombre" placeholder="Nombre completo" required>
