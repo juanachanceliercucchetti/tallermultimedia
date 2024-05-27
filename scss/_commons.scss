@@ -22,7 +22,8 @@ body {
 h5 {
     color: map-get($map: $paleta, $key: acento);
 }
-.coloracento{
+
+.coloracento {
     color: map-get($map: $paleta, $key: acento);
 }
 
@@ -60,6 +61,16 @@ h5 {
 }
 
 .btn-primary:hover {
+    background-color: map-get($map: $paleta, $key: rojoHover);
+    border-color: map-get($map: $paleta, $key: rojoHover);
+}
+
+.btn-primary:active, .btn-primary:focus{
+    background-color: map-get($map: $paleta, $key: rojoHover);
+    border-color: map-get($map: $paleta, $key: rojoHover);
+}
+
+.boton:active{
     background-color: map-get($map: $paleta, $key: rojoHover);
     border-color: map-get($map: $paleta, $key: rojoHover);
 }
@@ -103,6 +114,12 @@ footer {
 
 .menu {
     li a {
+        color: map-get($map: $paleta, $key: blanco);
+    }
+}
+
+#Gracias {
+    a {
         color: map-get($map: $paleta, $key: blanco);
     }
 }

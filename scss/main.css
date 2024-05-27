@@ -49,6 +49,16 @@ h5 {
   border-color: #eb1317;
 }
 
+.btn-primary:active, .btn-primary:focus {
+  background-color: #eb1317;
+  border-color: #eb1317;
+}
+
+.boton:active {
+  background-color: #eb1317;
+  border-color: #eb1317;
+}
+
 .linea {
   border-color: #131111;
   background-color: #131111;
@@ -87,6 +97,10 @@ footer {
 }
 
 .menu li a {
+  color: #FBF0F0;
+}
+
+#Gracias a {
   color: #FBF0F0;
 }
 
@@ -409,6 +423,10 @@ nav .logo {
   width: 100%;
   height: auto;
   margin: 0;
+}
+#Gracias .btn-primary {
+  border-radius: 0;
+  padding: 5px 40px;
 }
 
 footer {

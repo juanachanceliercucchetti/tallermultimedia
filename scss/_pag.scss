@@ -7,7 +7,6 @@
 
 nav {
     @media (max-width: 992px) {
-        
         .navbar-collapse {
             background-color: white;
             /* Fondo blanco para el menú desplegable */
@@ -274,6 +273,10 @@ nav {
         width: 100%;
         height: auto;
         margin: 0;
+    }
+    .btn-primary {
+        border-radius: 0;
+        padding: 5px 40px;
     }
 }
 
