@@ -317,6 +317,13 @@ nav .logo {
   }
 }
 
+@media (max-width: 992px) {
+  #form .form {
+    align-content: center;
+    display: flex;
+    justify-content: center;
+  }
+}
 #form .form {
   align-content: end;
   display: flex;

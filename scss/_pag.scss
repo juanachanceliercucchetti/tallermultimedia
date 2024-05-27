@@ -7,6 +7,7 @@
 
 nav {
     @media (max-width: 992px) {
+        
         .navbar-collapse {
             background-color: white;
             /* Fondo blanco para el menú desplegable */
@@ -182,6 +183,13 @@ nav {
 // FORM
 
 #form {
+    @media (max-width: 992px) {
+        .form {
+            align-content: center;
+            display: flex;
+            justify-content: center;
+        }
+    }
     .form {
         align-content: end;
         display: flex;
@@ -211,6 +219,7 @@ nav {
         height: auto;
         margin: 0;
     }
+    
 }
 
 #exampleModal {

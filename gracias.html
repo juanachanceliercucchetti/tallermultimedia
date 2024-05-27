@@ -26,10 +26,10 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#Equipo">Equipo</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#Estilos">Estilos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#Cronograma">Cronograma</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#form">Evento</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/#Equipo">Equipo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/#Estilos">Estilos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/#Cronograma">Cronograma</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/#form">Evento</a></li>
                 </ul>
             </div>
         </div>
@@ -47,12 +47,9 @@
 
                 <div class="card-img-overlay d-flex flex-column">
                     <div class="text-start ms-lg-5">
-                        <h2>¡Gracias por Registrarte!</h2>
-                        <p>Hola [Nombre],</p>
-                        <p>Nos alegra mucho que te hayas registrado para nuestro seminario de danzas. Hemos recibido tu
-                            solicitud para asistir a la clase de <strong>[Clase Elegida]</strong>.</p>
-                        <p>Pronto recibirás un correo electrónico con todos los detalles necesarios para que puedas
-                            unirte a la clase. ¡Estamos ansiosos por verte bailar y compartir esta experiencia contigo!
+                        <h2 class="my-5">¡Gracias <span id="Nombre-placeholder"></span>!</h2>
+                        <h4 class="mb-3">Nos alegra mucho que te hayas registrado para nuestro seminario de danzas.</h4>
+                        <p>Estate atento a tu correo electrónico <span id="Mail-placeholder"> </span>. ¡Estamos ansiosos por verte bailar y compartir esta experiencia contigo!
                         </p>
                         <p>Si tienes alguna pregunta, no dudes en contactarnos en <a
                                 href="mailto:balletindance@gmail.com">balletindance@gmail.com</a>.</p>
@@ -112,13 +109,22 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js">
+        
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    // Recuperar el nombre del almacenamiento local
+    var nombre = localStorage.getItem("Nombre");
+    var mail = localStorage.getItem("Mail");
+    // Mostrar el nombre en el mensaje de agradecimiento
+    document.getElementById("Nombre-placeholder").textContent = nombre;
+});
+    </script>
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
-<script>
-    src = "js/main.js";
-</script>
+
 </html>
