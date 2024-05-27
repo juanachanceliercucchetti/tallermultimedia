@@ -38,25 +38,26 @@ h5 {
   border: rgba(255, 255, 255, 0);
 }
 
-.btn-primary {
-  color: #FBF0F0;
-  background-color: #cf292c;
-  border-color: #cf292c;
+a.btn-primary,
+button.btn-primary,
+input.btn-primary {
+  color: #FBF0F0 !important;
+  background-color: #cf292c !important;
+  border-color: #cf292c !important;
 }
 
-.btn-primary:hover {
-  background-color: #eb1317;
-  border-color: #eb1317;
+a.btn-primary:hover,
+button.btn-primary:hover,
+input.btn-primary:hover {
+  background-color: #eb1317 !important;
+  border-color: #eb1317 !important;
 }
 
-.btn-primary:active, .btn-primary:focus {
-  background-color: #eb1317;
-  border-color: #eb1317;
-}
-
-.boton:active {
-  background-color: #eb1317;
-  border-color: #eb1317;
+a.btn-primary:active,
+button.btn-primary:active,
+input.btn-primary:active {
+  background-color: #eb1317 !important;
+  border-color: #eb1317 !important;
 }
 
 .linea {
