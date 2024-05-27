@@ -201,28 +201,21 @@ nav {
 // FORM
 
 #form {
-    @media (max-width: 992px) {
-        .form {
-            align-content: center;
-            display: flex;
-            justify-content: center;
-        }
-
-        .form-select {
-            width: 100%;
-        }
-    }
-
     .form {
         display: flex;
         flex-direction: column;
-        align-items: center; // Centra horizontalmente los elementos del formulario
+        align-items: center;
+        margin: auto;
+        max-width: 40%;
+
+        @media (max-width: 576px) {
+            max-width: 85%;
+            padding: 0 10px;
+        }
 
         .rellenando {
             padding: 20px;
             border: 12px;
-            display: flex;
-            flex-direction: column;
             width: 100%;
         }
 
@@ -232,7 +225,6 @@ nav {
         }
 
         .form-select {
-            display: flex;
             padding: 20px;
             margin-left: 3%;
             border: 12px;
@@ -250,92 +242,93 @@ nav {
             height: 100%;
             object-fit: cover;
         }
+    }
+}
 
+
+#exampleModal {
+    .form-select {
+        border-radius: 0px;
     }
 
-    #exampleModal {
-        .form-select {
-            border-radius: 0px;
-        }
-
-        .form {
-            align-content: end;
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-        }
-
-        .rellenando {
-            padding: 20px;
-            border: 12px;
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-        }
-
-        .form-select {
-            display: flex;
-            padding: 20px;
-            margin-left: 3%;
-            border: 12px;
-            width: 94%;
-        }
-
-        .btn-primary {
-            border-radius: 0;
-            padding: 5px 40px;
-        }
+    .form {
+        align-content: end;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
     }
 
-    #Gracias {
+    .rellenando {
+        padding: 20px;
+        border: 12px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .form-select {
+        display: flex;
+        padding: 20px;
+        margin-left: 3%;
+        border: 12px;
+        width: 94%;
+    }
+
+    .btn-primary {
+        border-radius: 0;
+        padding: 5px 40px;
+    }
+}
+
+#Gracias {
+    border-radius: 0 !important;
+    border: none; // o 0 si prefieres
+    border: var(--bs-card-border-width) solid var(--bs-card-border-color);
+
+    .custom-card {
+        border: none;
+    }
+
+    .card-img {
+        width: 100%;
+        height: auto;
         border-radius: 0 !important;
-        border: none; // o 0 si prefieres
-        border: var(--bs-card-border-width) solid var(--bs-card-border-color);
-
-        .custom-card {
-            border: none;
-        }
-
-        .card-img {
-            width: 100%;
-            height: auto;
-            border-radius: 0 !important;
-        }
-
-        .card-img-overlay {
-            border-radius: 0 !important;
-        }
-
-        .fondo {
-            width: 100%;
-            height: auto;
-            margin: 0;
-        }
-
-        .btn-primary {
-            border-radius: 0;
-            padding: 5px 40px;
-        }
     }
 
-    // FOOTER
+    .card-img-overlay {
+        border-radius: 0 !important;
+    }
 
-    footer {
-        width: auto;
-        padding: 20px 0;
+    .fondo {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
 
-        .content {
-            padding: 20px;
-        }
+    .btn-primary {
+        border-radius: 0;
+        padding: 5px 40px;
+    }
+}
 
-        .menu {
-            list-style: none;
+// FOOTER
 
-            li a {
-                display: inline-block;
-                padding-inline: 20px;
-                text-align: center;
-                text-decoration: none;
-            }
+footer {
+    width: auto;
+    padding: 20px 0;
+
+    .content {
+        padding: 20px;
+    }
+
+    .menu {
+        list-style: none;
+
+        li a {
+            display: inline-block;
+            padding-inline: 20px;
+            text-align: center;
+            text-decoration: none;
         }
     }
+}
