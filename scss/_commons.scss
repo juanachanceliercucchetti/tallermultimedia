@@ -22,6 +22,10 @@ body {
 h5 {
     color: map-get($map: $paleta, $key: acento);
 }
+.coloracento{
+    color: map-get($map: $paleta, $key: acento);
+}
+
 
 .navbar {
     color: map-get($map: $paleta, $key: negro);
@@ -90,7 +94,6 @@ h5 {
 .form-select {
     background-color: map-get($map: $paleta, $key: form);
     color: map-get($map: $paleta, $key: txtForm);
-    
 }
 
 footer {

@@ -8,6 +8,10 @@ h5 {
   color: #E4B717;
 }
 
+.coloracento {
+  color: #E4B717;
+}
+
 .navbar {
   color: #131111;
 }
@@ -322,6 +326,9 @@ nav .logo {
     align-content: center;
     display: flex;
     justify-content: center;
+  }
+  #form .form-select {
+    width: 100%;
   }
 }
 #form .form {

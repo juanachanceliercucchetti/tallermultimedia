@@ -47,13 +47,15 @@
 
                 <div class="card-img-overlay d-flex flex-column">
                     <div class="text-start ms-lg-5">
-                        <h2 class="my-5">¡Gracias <span id="Nombre-placeholder"></span>!</h2>
+                        <h2 class="my-5">¡Gracias <span class="coloracento" id="Nombre-placeholder"></span>!</h2>
                         <h4 class="mb-3">Nos alegra mucho que te hayas registrado para nuestro seminario de danzas.</h4>
-                        <p>Estate atento a tu correo electrónico <span id="Mail-placeholder"> </span>. ¡Estamos ansiosos por verte bailar y compartir esta experiencia contigo!
-                        </p>
-                        <p>Si tienes alguna pregunta, no dudes en contactarnos en <a
+                        <p>Estate atento a tu correo electrónico <span class="coloracento" id="Mail-placeholder"></span>. ¡Estamos ansiosos por verte bailar y compartir esta experiencia contigo!</p>
+                        <br>
+                        <p>Si tienes alguna pregunta, no dudes en contactarnos en <a 
                                 href="mailto:balletindance@gmail.com">balletindance@gmail.com</a>.</p>
-                        <a href="index.html" class="button">Volver al sitio</a>
+                    <br>
+                    <a type="button" class="btn btn-secondary mt-5" href="/#Inicio">Volver al sitio</a>
+                        
                     </div>
                 </div>
             </article>
@@ -119,6 +121,7 @@
     var mail = localStorage.getItem("Mail");
     // Mostrar el nombre en el mensaje de agradecimiento
     document.getElementById("Nombre-placeholder").textContent = nombre;
+    document.getElementById("Mail-placeholder").textContent = mail;
 });
     </script>
 </body>
